@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/entrar.css">
+    <title>⚡Energizar da mente⚡</title>
+</head>
+<body>
+
+      <!--Cabeçalho-->
+  <header id="header">
+    <img src="img/Logo70px.png">
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+        aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Vagas de trabalho</a></li>
+        <li><a href="https://www.leagueoflegends.com/pt-br/news/merch/">Produtos</a></li>
+        <li><a href="https://github.com/Kauaprestes1">Contato</a></li>
+        <li><a href="entrar.html">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="./JS/mobile-navbar.js"></script>
+  <!--Fim cabeçalho-->
+
+<!-- Conteudo -->
+
+<div class="container">
+    <div class="container-login">
+        <div class="wrap-login">
+            <form class="login-form">
+                <span class="login-form-title">
+                    Faça o login
+                </span>
+
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" type="text" name="email" autocomplete="off">
+                    <span class="focus-input-form" data-placeholder="E-mail"></span>
+                </div>
+
+                <div class="wrap-input margin-bottom-35">
+                    <input class="input-form" type="password" name="password">
+                    <span class="focus-input-form" data-placeholder="Senha"></span>
+                </div>
+
+                <div class="container-login-form-btn">
+                    <button class="login-form-btn">
+                        Login
+                    </button>
+                </div>
+
+                <ul class="login-utils">
+                    <li class="margin-bottom-8 margin-top-8">
+                        <span class="text1">
+                            Esqueceu sua
+                        </span>
+
+                        <a href="#" class="text2">
+                            senha?
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="text1">
+                            Não tem conta?
+                        </span>
+
+                        <a href="#" class="text2">
+                            Criar
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <img src="img/login png.png" width="300" height="300" class="margin-left-50" />
+    </div>
+</div>
+
+<script>
+    let inputs = document.getElementsByClassName('input-form');
+    for (let input of inputs) {
+        input.addEventListener("blur", function() {
+            if(input.value.trim() != ""){
+                input.classList.add("has-val");
+            } else {
+                input.classList.remove("has-val");
+            }
+        });
+    }
+</script>
+
+
+<!-- Fim conteudo -->
+
+ <!--Footer-->
+
+ <footer>
+    <div class="container-footer">
+      <div class="row-footer">
+
+        <!--Fim footer col-->
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#"> Quem somos </a></li>
+            <li><a href=""> nossos serviços </a></li>
+            <li><a href=""> política de privacidade </a></li>
+            <li><a href=""> programa de afiliados</a></li>
+          </ul>
+        </div>
+        <!--Fim footer col-->
+
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Obter ajuda</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Transporte</a></li>
+            <li><a href="#">devoluções</a></li>
+            <li><a href="#">Status De Pedido</a></li>
+            <li><a href="#">Opções De Pagamento</a></li>
+          </ul>
+        </div>
+        <!--Fim footer col-->
+
+        <!-- footer col-->
+        <div class="footer-col">
+          <h4>Loja online</h4>
+          <ul>
+            <li><a href="https://lista.mercadolivre.com.br/skins-lol">Skin</a></li>
+            <li><a href="https://www.elo7.com.br/lista/roupas-league-of-legends">Modas</a></li>
+            <li><a href="https://lista.mercadolivre.com.br/action-figure-league-of-legends">Bonequinhos</a></li>
+            <li><a href="https://www.amazon.com.br/Componentes/b?ie=UTF8&node=16364750011">Equipamentos</a></li>
+          </ul>
+        </div>
+
+
+        <!--Icons midia footer-->
+
+        <div class="medias-socias">
+          <a href="#"> <i class="fa fa-facebook"><img
+                src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" /></i> </a>
+          <a href="#"> <i class="fa fa-instagram"></i><img
+              src="https://img.icons8.com/ios-glyphs/50/000000/instagram-new.png" /></a>
+          <a href="#"> <i class="fa fa-twitter"></i><img
+              src="https://img.icons8.com/ios-filled/50/000000/twitter.png" /></a>
+          <a href="#"> <i class="fa fa-linkedin"></i><img
+              src="https://img.icons8.com/windows/50/000000/github.png" /></a>
+        </div>
+
+        <!--Fim footer-->
+    
+</body>
+</html>
