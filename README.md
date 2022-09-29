@@ -1,2 +1,2 @@
 # ⚡Energizar da mente⚡
-Site de curiosidades, feito em aula 
+Site de curiosidades utilizando html, css e JS
