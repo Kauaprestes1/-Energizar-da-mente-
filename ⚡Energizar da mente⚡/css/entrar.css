@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 
 * {
   padding: 0%;
@@ -87,7 +87,6 @@ a:hover {
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
 }
 
 ul, li {
@@ -109,14 +108,12 @@ button:hover {
 */
 
 .text1 {
-  font-family: Poppins-Regular;
   font-size: 15px;
   color: var(--text1);
   line-height: 1.5;
 }
 
 .text2 {
-  font-family: Poppins-Regular;
   font-size: 15px;
   color: var(--main-color);
   line-height: 1.5;
@@ -178,7 +175,6 @@ button:hover {
 
 .login-form-title {
   display: block;
-  font-family: Poppins-Bold;
   font-size: 39px;
   color: var(--highligth-text);
   line-height: 1.2;
@@ -196,7 +192,6 @@ button:hover {
 }
 
 .input-form {
-  font-family: Poppins-SemiBold;
   font-size: 18px;
   color: var(--input-text);
   line-height: 1.2;
@@ -230,7 +225,6 @@ button:hover {
 }
 
 .focus-input-form::after {
-  font-family: Poppins-Medium;
   font-size: 18px;
   color: var(--text1);
   line-height: 1.2;
@@ -273,7 +267,6 @@ button:hover {
 }
 
 .login-form-btn {
-  font-family: Poppins-Medium;
   font-size: 16px;
   color: var(--white-color);
   line-height: 1.2;
@@ -298,7 +291,6 @@ button:hover {
 */
 
 a {
-	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: var(--link-color);

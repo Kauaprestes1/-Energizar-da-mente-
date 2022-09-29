@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="JS/entrar.js"></script>
-    <link 
+document.querySelector(`container-login-form-btn`)
+function btn() {
+
+
+
+    alert("Verifique se esta preenchido corretamente")
+
+    form_ok = true
+
+
+
+    if (form_ok) {
+
+        console.log("dados serão enviados!")
+
+    } else {
+
+        alert("Preenchimento incorreto")
+
+    }
+
+
+
+    form_ok = false
+
+
+
+    if (form_ok) {
+
+        console.log("dados serão enviados!")
+
+    } else {
+
+        alert("Preenchimento incorreto")
+
+    }
+
+}
+
