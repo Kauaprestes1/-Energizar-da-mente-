@@ -1,3 +1,15 @@
+:root {
+  --color-hex-ff: #FFFFFF;
+  --color-white: white;
+  --rgb-150x2-248: rgb(150, 150, 248);
+  --color-415aca: #415aca;
+  --color-f9: #f9f9f9;
+  --color-0x4: rgba(0, 0, 0, 0);
+  --color-black: black;
+  --color-7b: #7B7B7B;
+  --color-F1: #f1f1f1;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 * {
@@ -6,7 +18,7 @@
 }
 
 body {
-  background-color:#FFFFFF ;
+  background-color: var(--color-hex-ff);
 }
 
 /* Menu normal */
@@ -16,13 +28,13 @@ ul {
 }
 
 a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-family: sans-serif;
 }
 
 a:hover {
-  background: rgb(150, 150, 248);
+  background: var(--rgb-150x2-248);
 }
 
 #logo {
@@ -37,13 +49,14 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #415aca;
+  background: var(--color-415aca);
 }
 
 #menu {
   display: flex;
   list-style: none;
   gap: 0.5rem;
+  align-items: center;
 }
 
 #menu a {
@@ -57,6 +70,51 @@ a:hover {
 
 /* Fim menu normal */
 
+/* Dropdown button */
+
+.dropbtn {
+  background-color: var(--color-0x4);
+  color: var(--color-white);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-f9);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px var(--color-0x4);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--color-black);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-F1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color-0x4);
+}
+
 
 
 /* Corpo do site(boas-vindas) */
@@ -64,15 +122,21 @@ a:hover {
   padding: 30px;
 }
 
+.edit_col {
+  background-color: #5CE1E6;
+  width: 400px;
+  height: 100px;
+}
+
 .h1 {
   margin: 15px;
-  color: black;
+  color: var(--color-black);
   text-align: left;
 }
 
 .text {
   text-align: left;
-  color: #7B7B7B;
+  color: var(--color-7b);
   font-size: larger;
 }
 
@@ -83,6 +147,7 @@ a:hover {
   width: 100%;
   text-align: center;
 }
+
 /* Imagens fim */
 
 
@@ -93,12 +158,12 @@ a:hover {
 }
 
 .h1noticias {
-  color: black;
+  color: var(--color-black);
   text-align: left;
 }
 
 .txtnoticias {
-  color: #7B7B7B;
+  color: var(--color-7b);
   text-align: left;
 }
 
@@ -113,7 +178,7 @@ li {
 
 /* Footer */
 footer {
-  background-color: #415aca;
+  background-color: var(--color-415aca);
   padding: 50px 0;
 }
 
@@ -135,7 +200,7 @@ footer {
 
 .footer-col h4 {
   font-size: 22px;
-  color: white;
+  color: var(--color-white);
   margin-bottom: 20px;
   font-weight: 500;
   position: relative;
@@ -153,7 +218,7 @@ footer {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 300;
   display: block;
@@ -161,7 +226,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-  color: rgb(150, 150, 248);
+  color: var(--rgb-150x2-248);
   padding-left: 10px;
 }
 
@@ -178,8 +243,8 @@ footer {
   margin: 0 10px 10px 0;
   text-decoration: none;
   border-radius: 50%;
-  color: white;
-  border: 1px solid white;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
   transition: all 0.5s ease;
 }
 
@@ -188,26 +253,26 @@ footer {
 }
 
 .footer-col .medias-socias a:hover {
-  color: #415aca;
-  background-color: white;
+  color: var(--color-415aca);
+  background-color: var(--color-white);
 }
 
 /* Fim footer */
 
 
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   .img_responsive {
     width: 100%;
   }
- }
+}
 
 
- @media (max-width: 768px) { 
+@media (max-width: 768px) {
   .img_responsive {
     width: 100%;
   }
-  }
+}
 
 
 @media (max-width: 600px) {
@@ -333,6 +398,7 @@ footer {
     width: 100%;
     text-align: center;
   }
+
   /*  FIM IMAGENS */
 
 
