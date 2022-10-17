@@ -1,6 +1,5 @@
 :root {
     --color-white: #fff;
-    --color-red: #e63636;
     --color-dark1: white;
     --color-dark2: #415aca;
     --color-purple1: #ECBF31;
@@ -14,7 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--color-dark1);
+    background-color: var(--color-white);
     color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -30,6 +29,7 @@ body {
     border-radius: 10px;
     min-width: 30%;
     overflow: auto;
+    height: 100%;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h1 {
 .span-required {
     font-size: 12px;
     margin: 3px 0 0 1px;
-    color: var(--color-red);
+    color: var(--color-white);
     display: none;
 }
 
@@ -70,7 +70,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
-    gap: 1rem;
+    gap: 2rem;
+    color: var(--color-white);
 }
 
 button[type="submit"] {
@@ -89,6 +90,13 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--color-purple1);
 }
+
+.p {
+    color: var(--color-white);
+}
+
+
+
 
 
 @media screen and (max-width: 576px) {

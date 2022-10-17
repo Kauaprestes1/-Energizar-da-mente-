@@ -3,7 +3,7 @@
 $dbHost = 'Localhost';
 $dbUsername = 'root';
 $dbPassword = '';
-$dbname = 'formulario-kaua';
+$dbname = 'formulario-test';
 
 $conexao = new mysql($dbHost, $dbUsername, $dbPassword, $dbname,)
 
